@@ -2,15 +2,21 @@
 A project that proves the viability of booting macOS from an APFS container spanning a RAID array. Development detailed at https://forums.macrumors.com/threads/mojave-on-raid-with-apfs-a-howto.2125096/
 
 Initial experiments were met with failure, with macOS stuck in an apparent reboot loop on first boot.
+
 The key to allowing success was the following identified in the kextcache man page:
 
-<code>-U is used during system startup to check whether the cache from which the currently-running kernel was loaded is out of date. System startup interprets an EX_OSFILE exit code to mean that the system should be immediately rebooted off the newer kernel cache
-
-:
-:
-:
-
-If kextcache cannot find or make sense of os_volume/usr/standalone/bootcaches.plist the volume is treated as if no caches need updating: success is returned.
+<code>
+    -U is used during system startup to check whether the cache from which the
+    currently-running kernel was loaded is out of date. System startup
+    interprets an EX_OSFILE exit code to mean that the system should be
+    immediately rebooted off the newer kernel cache
+    
+    :
+    :
+    :
+    
+    If kextcache cannot find or make sense of os_volume/usr/standalone/bootcaches.plist
+    the volume is treated as if no caches need updating: success is returned.
 </code>
 
 Note that the same process could potentially be abused to ensure the OS does not validate the kextcache on launch.
