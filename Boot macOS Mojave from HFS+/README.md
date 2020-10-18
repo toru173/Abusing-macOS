@@ -4,7 +4,7 @@ macOS Mojave forces conversion of all install targets to APFS. As I was more fam
 Procedure:
 - Use createinstallmedia to create an (8GB) USB installer
 - Convert /Volumes/Install\ macOS\ Mojave/Contents/SharedSupport/BaseSystem.dmg to read/write
-- Replace /Volumes/macOS\ Base\ System/System/Library/PrivateFrameworks/OSInstaller.framework/Versions/A/OSInstaller with either a patched one from the Hackintosh Community (Thanks crazybirdy!) or the same file from the 10.13 installer
+- Replace /Volumes/macOS\ Base\ System/System/Library/PrivateFrameworks/OSInstaller.framework/Versions/A/OSInstaller with the same file from the 10.13 installer
 - Compress the dmg again. Rename it Modified\ BaseSystem.dmg, and move it back to /Volumes/Install\ macOS\ Mojave/Contents/SharedSupport/
 - Alter /Volumes/Install\ macOS\ Mojave/Library/Preferences/SystemConfiguration/com.apple.boot.plist to point to Modified\ BaseSystem.dmg instead of the original.
 - Boot to the installer. Rather than running the graphical install, drop to terminal.
