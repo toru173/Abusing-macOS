@@ -16,7 +16,8 @@ The key to allowing success was the following identified in the kextcache man pa
     :
     
     If kextcache cannot find or make sense of os_volume/usr/standalone/bootcaches.plist
-    the volume is treated as if no caches need updating: success is returned.```
+    the volume is treated as if no caches need updating: success is returned.
+```
 
 Note that the same process could potentially be abused to ensure the OS does not validate the kextcache on launch.
 
@@ -30,4 +31,7 @@ The process:
 - Restart in single user mode. Mount root.
 - Rename /usr/standalone/bootcaches.plist
 - Reboot and enjoy macOS on RAID
+
+![](macOS Mojave on RAID Disk Utility.png)
+![](macOS Mojave on RAID System Information.png)
 
