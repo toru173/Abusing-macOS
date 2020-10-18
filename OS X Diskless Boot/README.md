@@ -9,7 +9,7 @@ During diskless boot, launchd calls /private/etc/rc.cdrom. /private/etc/rc.cdrom
 
 Note that the USB used to hold the compressed image is half the size of the total image when uncompressed; in fact, with a higher compression level it would be possible to have a bootable OS X root that is only slightly larger than the installed files.
 
-![](file list path)
-![](System Information and Root Volume)
+![](https://github.com/toru173/Abusing-macOS/blob/main/OS%20X%20Diskless%20Boot/File%20List.png)
+![](https://github.com/toru173/Abusing-macOS/blob/main/OS%20X%20Diskless%20Boot/System%20Information%20and%20Root%20Volume.png)
 
 Project Status: Proof of concept complete
