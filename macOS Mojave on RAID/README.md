@@ -5,7 +5,7 @@ Initial experiments were met with failure, with macOS stuck in an apparent reboo
 
 The key to allowing success was the following identified in the kextcache man page:
 
-<code>
+```
     -U is used during system startup to check whether the cache from which the
     currently-running kernel was loaded is out of date. System startup
     interprets an EX_OSFILE exit code to mean that the system should be
@@ -16,8 +16,7 @@ The key to allowing success was the following identified in the kextcache man pa
     :
     
     If kextcache cannot find or make sense of os_volume/usr/standalone/bootcaches.plist
-    the volume is treated as if no caches need updating: success is returned.
-</code>
+    the volume is treated as if no caches need updating: success is returned.```
 
 Note that the same process could potentially be abused to ensure the OS does not validate the kextcache on launch.
 
