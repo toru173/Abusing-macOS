@@ -1,0 +1,7 @@
+#!/bin/sh -x
+
+echo "Running rc.cdrom"
+
+/bin/sh -x /etc/rc.liveboot init
+
+echo "Live booting Mac OS X"

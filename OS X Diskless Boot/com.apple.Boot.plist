@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kernel Cache</key>
+	<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+	<key>Kernel Flags</key>
+	<string>-rootdmg-ramdisk root-dmg=file:///Diskless%20Boot%20Image/OS%20X%20El%20Capitan%20Diskless%20Boot.dmg 
+</string>
+</dict>
+</plist>
