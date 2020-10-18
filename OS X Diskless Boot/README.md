@@ -3,7 +3,7 @@ A project to create a full live OS X environment, similar to the installer but w
 
 During this project it was identified that the behavious of launchd changes with the presence or absence of /private/etc/rc.cdrom - even if the file is present (but empty), launchd behaves as if it is booting into the installer environment. This behavious is useful early in the boot because it allows us to set up a ramdisk in much the same way the installer does, but becomes a hinderance after loginwindow starts as the behaviour of loginwindow also appears to be set by launchd.
 
-The solution is to create a small script triggered by a LaunchDaemon (here, /private/etc/rc.cleanup and /System/com.apple.liveboot.plist), which effectively deletes rc.cdrom. As all changes made are written to the ramdisk rather than the disk image, the file will return to it's original location on next boot.
+The solution is to create a small script triggered by a LaunchDaemon (here, /private/etc/rc.cleanup and /System/Library/LaunchDaemons/com.apple.liveboot.plist), which effectively deletes rc.cdrom. As all changes made are written to the ramdisk rather than the disk image, the file will return to it's original location on next boot.
 
 During diskless boot, launchd calls /private/etc/rc.cdrom. /private/etc/rc.cdrom  calls /private/etc/rc.liveboot. launchd also proceeds to call other entries in /Library/LaunchAgents, /Library/LaunchDaemons, /System/Library/LaunchAgents and /System/Library/LauncDaemons as normal, and eventually triggers /private/etc/rc.cleanup which then resprings launchd.
 
