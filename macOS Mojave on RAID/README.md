@@ -21,7 +21,7 @@ The key to allowing success was the following identified in the kextcache man pa
 
 Note that the same process could potentially be abused to ensure the OS does not validate the kextcache on launch.
 
-The process:
+Procedure:
 - Create the RAID either through the GUI or terminal
 - Edit the GPT of the newly mounted volume. Add an EFI partition and an HFS+ or APFS partition as required (thanks Taruga)
 - Format the partition
@@ -35,3 +35,4 @@ The process:
 ![](https://github.com/toru173/Abusing-macOS/blob/main/macOS%20Mojave%20on%20RAID/macOS%20Mojave%20on%20RAID%20Disk%20Utility.png)
 ![](https://github.com/toru173/Abusing-macOS/blob/main/macOS%20Mojave%20on%20RAID/macOS%20Mojave%20on%20RAID%20System%20Information.png)
 
+Porject Status: Proof of concept complete
