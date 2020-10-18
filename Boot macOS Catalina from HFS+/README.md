@@ -10,6 +10,8 @@ Procedure:
 - Use `ditto` to copy /System/Library/Templates/Data to /
 - Reboot, and enjoy!
 
+The system is similar enough to a regular install that a layperson may not noticed the difference; however, all the benefits of the ROSV are lost in this setup and it could thus be used by a malicious actor
+
 ![](https://github.com/toru173/Abusing-macOS/blob/main/Boot%20macOS%20Catalina%20from%20HFS%2B/macOS%20Catalina%20on%20HFS%2B.png)
 
 Project Status: Proof of concept complete
