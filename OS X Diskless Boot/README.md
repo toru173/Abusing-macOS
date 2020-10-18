@@ -5,7 +5,7 @@ During this project it was identified that the behavious of launchd changes with
 
 The solution is to create a small script triggered by a LaunchDaemon (here, /private/etc/rc.cleanup and /System/com.apple.liveboot.plist), which effectively deletes rc.cdrom. As all changes made are written to the ramdisk rather than the disk image, the file will return to it's original location on next boot.
 
-During diskless boot, launchd calls /private/etc/rc.cdrom. /private/etc/rc.cdrom  calls /private/etc/rc.liveboot. launchd also proceeds to call other entries in /Library/LaunchAgents, /Library/LaunchDaemons, /System/Library/LaunchAgents and /System/Library/LauncDaemons as normal, and eventually triggers /private/etc/rc.cleanup which then resprings launchd
+During diskless boot, launchd calls /private/etc/rc.cdrom. /private/etc/rc.cdrom  calls /private/etc/rc.liveboot. launchd also proceeds to call other entries in /Library/LaunchAgents, /Library/LaunchDaemons, /System/Library/LaunchAgents and /System/Library/LauncDaemons as normal, and eventually triggers /private/etc/rc.cleanup which then resprings launchd.
 
 Note that the USB used to hold the compressed image is half the size of the total image when uncompressed; in fact, with a higher compression level it would be possible to have a bootable OS X root that is only slightly larger than the installed files.
 
