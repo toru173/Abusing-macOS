@@ -14,7 +14,7 @@ Procedure:
 
 Note that an attacker could use a similar method to craft a malicious installer
 
-![](boot.plist path)
-![](system information path)
+![](https://github.com/toru173/Abusing-macOS/blob/main/Boot%20macOS%20Mojave%20from%20HFS%2B/Modified%20com.apple.boot.plist.png)
+![](https://github.com/toru173/Abusing-macOS/blob/main/Boot%20macOS%20Mojave%20from%20HFS%2B/System%20Information%20Screenshot.png)
 
 Project Status: Proof of concept complete
