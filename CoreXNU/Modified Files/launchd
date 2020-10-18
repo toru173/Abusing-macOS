@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# From the PureDarwin project
+# ISO downloaded from https://storage.googleapis.com/google-code-archive-downlo$
+
+# Redirecting stdin  (/dev/stdin  -> /dev/fd/0)
+exec 0</dev/console
+# Redirecting stdout (/dev/stdout -> /dev/fd/1)
+exec 1>/dev/console
+# Redirecting stderr (/dev/stderr -> /dev/fd/2)
+exec 2>/dev/console
+
+/bin/echo "Starting System..."
+
+/bin/sh /etc/rc.boot
+
+/bin/sleep 2
+
+/bin/echo "Shutting Down..."
+/bin/echo "Graceful shutdown not implemented. Prepare for crash."
+/bin/sleep 5
