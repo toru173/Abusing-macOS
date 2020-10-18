@@ -32,6 +32,6 @@ The process:
 - Rename /usr/standalone/bootcaches.plist
 - Reboot and enjoy macOS on RAID
 
-![](macOS Mojave on RAID Disk Utility.png)
-![](macOS Mojave on RAID System Information.png)
+![](https://github.com/toru173/Abusing-macOS/blob/main/macOS%20Mojave%20on%20RAID/macOS%20Mojave%20on%20RAID%20Disk%20Utility.png)
+![](https://github.com/toru173/Abusing-macOS/blob/main/macOS%20Mojave%20on%20RAID/macOS%20Mojave%20on%20RAID%20System%20Information.png)
 
